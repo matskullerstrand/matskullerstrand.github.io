@@ -114,7 +114,7 @@ hr {
 /* ---------------------------------------- Projects Page ---------------------------------------- */
 
 .headshot {
-    background-image: url(Mats/Mats.jpg);
+    background-image: url(assets/Mats/Mats.jpg);
     width: 25vw;
     height: 25vw;
     background-size: cover;

@@ -4,10 +4,15 @@
     <head>
         <!-- CSS File -->
         <link rel="stylesheet" href="Portfolio.css">
+        <!-- Inter Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-        <title>About</title>
+        <!-- Font Awesome (Icons) -->
+        <script src="https://kit.fontawesome.com/110cdd54c5.js" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="jquery-3.7.1.min.js"></script>
+        <title>Projects</title>
     </head>
 
     <body>
@@ -16,115 +21,247 @@
         <div class="topmenu">
             <a id="logo" href="index.html">Mats Kullerstrand</a>
             <a href="Contact.html">Contact</a>
-            <a class="active" href="About.html">About</a>
-            <a href="index.html">Projects</a>
+            <a href="About.html">About</a>
+            <a class="active" href="index.html">Projects</a>
         </div>
 
-        <!-- About Me -->
-        <div class="about-container">
-            <h3>About Me</h3>
-            <hr>
+        <!-- Return to Top -->
+        <div>
+            <a href="javascript:" id="return-to-top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+            <script src="ReturnToTop.js"></script>
+        </div>
 
-            <div class="about-row">
-                <div class="about-column-left">
-                    <div style="margin-top: 32px;">
-                        <p class="about">
-                            My name is Mats Kullerstrand and I am a student at Chalmers University of 
-                            Technology in Gothenburg, Sweden. My academic studies have included diverse 
-                            areas such as user experience, user interfaces, industrial design, product 
-                            development, programming, and proficiency in Adobe Suite and Figma, along 
-                            with the foundational engineering courses required like advanced mathematics 
-                            and physics. I hold a Bachelor's degree of Industrial Design Engineering and 
-                            am currently in the final year pursuing a Master's of Interaction Design and 
-                            Technologies. 
-                        </p>
-                        <p class="about">
-                            While I was born in the United States, I have lived and spent all my childhood 
-                            entirely in Sweden, while later I experienced my teenage years in the multicultural 
-                            city of Toronto. Holding Swedish, Canadian, and American citizenships, I view 
-                            this diverse background as a valuable aspect and a great asset for any job or 
-                            opportunity. Growing up on two different continents has instilled in me a natural 
-                            instinct to connect, communicate, and build strong bonds.  These skills apply 
-                            daily in professional settings, with friends, and within my family.
-                        </p>
-                        <p class="about">
-                            My professional experience includes working as a UX Design Intern at Ericsson, 
-                            where I became an integral part of an agile team, operating within short sprint 
-                            cycles. During this time, I developed my Figma skills to an expert level and 
-                            gained practical experience with Confluence and Jira. 
-                        </p>
-                    </div>      
-                </div>
+        <!-- Save Scroll Position -->
+        <script src="SaveScrollPosition.js"></script>
 
-                <div class="about-column-right">
-                    <h4 class="about">General</h4>
-                    <p class="tags">Usability</p>
-                    <p class="tags">Prototyping</p>
-                    <p class="tags">User Testing</p>
-                    <p class="tags">Researching</p>
-                    <p class="tags">Wireframing</p>
-                    <p class="tags">Autolayout</p>
+        <!-- Animated Polygons -->
+        <div>
+            <object data="assets/Polygons/CircleWhite.svg" class="circlewhite"></object>
+            <object data="assets/Polygons/Square.svg" class="square"></object>
+            <object data="assets/Polygons/CircleRed.svg" class="circlered"></object>
+            <object data="assets/Polygons/CircleBlue.svg" class="circleblue"></object>
+            <script src="z-index.js"></script>
+            <object data="assets/Polygons/HalfCircle.svg" class="halfcircle"></object>
+            <object data="assets/Polygons/Mouse.svg" class="mouse"></object>
+            <object data="assets/Polygons/MouseCircle.svg" class="mousecircle"></object>
+            <script src="assets/MouseScroll.js"></script>
+        </div>
 
-                    <h4 class="about">Skills</h4>
-                    <p class="tags">Figma</p>
-                    <p class="tags">Adobe Suite</p>
-                    <p class="tags">HTML</p>
-                    <p class="tags">CSS</p>
-                    <p class="tags">JavaScript</p>
-                    <p class="tags">Python</p>
-                    <p class="tags">Unity</p>
-                    <p class="tags">Alias</p>
-                    <p class="tags">CATIA</p>
+        <!-- Navigation Circles -->
+        <div class="navcirclecontainer">
+            <div class="navcircle" data-circle-id="1"></div>
+            <div class="navcircle" data-circle-id="2"></div>
+            <div class="navcircle" data-circle-id="3"></div>
+            <div class="navcircle" data-circle-id="4"></div>
+            <div class="navcircle" data-circle-id="5"></div>
+            <script src="NavigationCircles.js"></script>
+        </div>
 
-                    <h4 class="about">Hobbies</h4>
-                    <p class="tags">Tennis</p>
-                    <p class="tags">Skiing</p>
-                    <p class="tags">Photography</p>
-                    <p class="tags">Creating Playlists</p>
-                </div>
+        <!-- Content -->
+        <!-- Mats Info -->
+        <div class="mats-container">
+
+            <div class="column-60" style="height: 100vh;">
+                <h2>Mats Kullerstrand</h2>
+                <p class="tags">UX Designer</p>
+                <p class="tags">UI Designer</p>
+                <p class="tags">User Centered Designer</p>
+                <br>
+                <p class="tags">Human Researcher</p>
+                <p class="tags">Product Designer</p>
+                <p class="tags">Engineer</p>
+                <p>Mats Kullerstrand is a UX Designer student at Chalmers University of Technology. 
+                    With a Bachelor of Industrial Design Engineering and a high interest in digital design, 
+                    Mats is currently doing his Master's in Interaction Design and Technologies. 
+                    He enjoys creating products where the user is in the centrum utilizing 
+                    programs such as Figma and the Adobe Suite.</p>
+                <a href="About.html">
+                    <button class="button">About Me<i class="fa-solid fa-chevron-right"></i></button>
+                </a>
+            </div>
     
+            <div class="column-40">
+                <div class="headshot"></div>
+            </div>
+        </div>
+
+        <!-- Light Rig Project -->
+        <div class="projects-container">
+
+            <div class="column-50">
+                <img class="projectimage" src="assets/LightRig/LightRigMain.png" alt="LightRigApp">
             </div>
 
-            <!-- Education and Work Experience -->
-            <div style="margin-top: 128px;" class="about-row">
-                <div class="about-column-left">
-                    <h3>Education</h3>
-                    <hr>
-
-                    <h4 class="about" style="padding-bottom: 4px;">M.Sc. Interaction Design and Technologies</h4>
-                    <p class="about" style="margin-top: 0px;">Chalmers University of Technology<br>2022 - 2024</p>
-
-                    <h4 class="about" style="padding-bottom: 4px;">M.Sc. Faculty of Engineering - Multimedia</h4>
-                    <p class="about" style="margin-top: 0px;">Universidade do Porto<br>Exchange Semester Fall 2023</p>
-
-                    <h4 class="about" style="padding-bottom: 4px;">B.Sc. Industrial Design Engineering</h4>
-                    <p class="about" style="margin-top: 0px;">Chalmers University of Technology<br>2018 - 2021</p>
-                </div>
-
-                <div class="about-column-right">
-                    <h3>Work Experience</h3>
-                    <hr>
-
-                    <h4 class="about" style="padding-bottom: 4px;">Kognic - Master Thesis</h4>
-                    <p class="about" style="margin-top: 0px;">January 2024 - June 2024</p>
-
-                    <h4 class="about" style="padding-bottom: 4px;">Ericsson - UX Design Intern</h4>
-                    <p class="about" style="margin-top: 0px;">June 2023 - August 2023</p>
-
-                    <h4 class="about" style="padding-bottom: 4px;">Volvia - Claims Adjuster</h4>
-                    <p class="about" style="margin-top: 0px;">June 2022 - August 2023</p>
-
-                    <h4 class="about" style="padding-bottom: 4px;">Kjell & Company - Sales Associate</h4>
-                    <p class="about" style="margin-top: 0px;">June 2021 - December 2021</p>
-
-                    <h4 class="about" style="padding-bottom: 4px;">Boid / Varg&#246;n Alloys AB - Bachelor Thesis</h4>
-                    <p class="about" style="margin-top: 0px;">January 2021 - May 2021</p>
-
-                    <h4 class="about" style="padding-bottom: 4px;">Chalmers University of Technology - Teacher<br>Adobe Suite</h4>
-                    <p class="about" style="margin-top: 0px;">August 2020</p>
-                </div>
+            <div class="column-50">
+                <h3 style="margin-bottom: 16px;">Light Rig Application</h3>
+                <p class="tags">Graphical User Interfaces</p>
+                <p class="tags">Figma </p>
+                <p class="tags">Tablet App</p>
+                <p>The purpose of this project was to design a graphical 
+                    user interface for a complex system, a light rig control 
+                    system utilized prior to and during concerts. 
+                    This interface was specifically designed for tablet usage, 
+                    enabling users to explore their work from different perspectives 
+                    within the auditorium.</p>
+                <a href="LightRig.html">
+                    <button class="button">Learn More<i class="fa-solid fa-chevron-right"></i></button>
+                </a>
             </div>
 
+        </div>
+
+        <!-- Death Date Project -->
+        <div class="projects-container" style="margin-top: 128px;">
+
+            <div class="column-50">
+                <h3 style="margin-bottom: 16px;">Death Date</h3>
+                <p class="tags">Designing User Experiences</p>
+                <p class="tags">Figma </p>
+                <p class="tags">Photoshop</p>
+                <p class="tags">Mobile App</p>
+                <p>The aim of this project was to create a user experience 
+                    that evokes the senses of unease and anxiety through 
+                    critical and speculative design. The outcome, Death Date, 
+                    is a DNA test that estimates users' natural death dates. 
+                    Additionally, the company offers an application to help 
+                    plan your remaining days, including retirement, bucket list 
+                    activities, and much more.</p>
+                <a href="DeathDate.html">
+                    <button class="button">Learn More<i class="fa-solid fa-chevron-right"></i></button>
+                </a>
+            </div>
+
+            <div class="column-50">
+                <img class="projectimage" src="assets/DeathDate/DeathDate.png" alt="DeathDateApp">
+            </div>
+
+        </div>
+
+        <!-- Knowledge Sharing Project -->
+        <div class="projects-container" style="margin-top: 128px;">
+
+            <div class="column-50">
+                <img class="projectimage" src="assets/KnowledgeSharing/KnowledgeSharingMockup.png" alt="KnowledgeSharingApp">
+            </div>
+
+            <div class="column-50">
+                <h3 style="margin-bottom: 16px;">Knowledge Sharing Platform</h3>
+                <p class="tags">Individual Project</p>
+                <p class="tags">User Centered Design </p>
+                <p class="tags">Figma</p>
+                <p class="tags">Desktop App</p>
+                <p>The aim of this project was to explore how a universal 
+                    knowledge sharing platform can be developed to suit 
+                    different corporations' needs. The resulting platform 
+                    enables coworkers to help each other, ask for help, find experts 
+                    within the company, and store knowledge from previous projects.</p>
+                <a href="KnowledgeSharing.html">
+                    <button class="button">Learn More<i class="fa-solid fa-chevron-right"></i></button>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Bachelor Thesis Project -->
+        <div class="projects-container" style="margin-top: 128px;">
+
+            <div class="column-50">
+                <h3 style="margin-bottom: 16px;">Bachelor Thesis</h3>
+                <p class="tags">Product Development</p>
+                <p class="tags">User Centered Design </p>
+                <p class="tags">Design Process</p>
+                <p>The brief was to investigate how a workplace for a specific operator 
+                    can be designed when relocating to a new and centeralized controlroom 
+                    at Varg&#246;n Alloys AB. In order to achieve this, the needs and 
+                    requirements of the mentioned operator were analyzed. 
+                    This was a group project and was carried out in collaboration with 
+                    Boid AB who designed the controlroom.</p>
+                <a href="BachelorThesis.html">
+                    <button class="button">Learn More<i class="fa-solid fa-chevron-right"></i></button>
+                </a>
+            </div>
+
+            <div class="column-50">
+                <img class="projectimage" src="assets/BachelorThesis/TheArcRender.png" alt="TheArcRender">
+            </div>
+
+        </div>
+
+        <!-- Personal Projects -->
+        <div style="margin: 128px 224px 224px 224px;">
+            <h3 style="margin-bottom: 16px;">Photography & Digital Art</h3>
+            <p class="tags">Personal Projects</p>
+            <p class="tags">Lightroom</p>
+            <p class="tags">Illustrator</p>
+            <p>Photography is something I do in my spare time. 
+                I enjoy capturing the moment in order to show others 
+                and look back on at a later date. Using all types of devices, 
+                for example, iPhone, DSLR, and film cameras</p>
+            <p>The posters were created to fill the empty walls in my apartment. 
+                The process allowed me to test my creativity while furthering my 
+                development in digital art and Illustrator skills, resulting in visually 
+                striking pieces that bring joy and inspiration to my living space. </p>
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="assets/Pictures/Art1.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Art2.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Art3.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture1.jpg" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture2.JPG" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture3.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture4.jpeg" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture5.jpeg" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture6.jpg" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Art1.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Art2.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Art3.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture1.jpg" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture2.JPG" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture3.png" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture4.jpeg" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture5.jpeg" class="slider-images" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Pictures/Picture6.jpg" class="slider-images" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </body>
