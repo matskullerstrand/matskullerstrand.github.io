@@ -1,0 +1,646 @@
+/* ----------------------------------------- Portfolio ----------------------------------------- */
+
+/* ----------------------------------------- Main CSS ----------------------------------------- */
+
+body {
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Inter";
+    font-size: 9vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #f2f2f2;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Inter";
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #f2f2f2;
+    padding-top: 0px;
+    padding-bottom: 16px;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+h3 {
+    font-family: "Inter";
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #f2f2f2;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+h4 {
+    font-family: "Inter";
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #f2f2f2;
+    margin: 0px
+}
+
+h4.about {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h4.contact {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 0px;
+}
+
+p {
+    font-family: "Inter";
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #f2f2f2;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    text-align: justify;
+}
+
+p.projects {
+    font-family: "Inter";
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #f2f2f2;
+    margin: 0;
+    text-align: justify;
+    padding: 32px;
+}
+
+p.about {
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #f2f2f2;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+hr {
+    border: 2px solid #f2f2f2;
+}
+
+/* ---------------------------------------- Projects Page ---------------------------------------- */
+
+.headshot {
+    background-image: url(Mats/Mats.jpg);
+    width: 25vw;
+    height: 25vw;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0px 5px 5px 5px rgba(24, 24, 24, 0.6);
+    animation: blob 10s ease-in-out infinite;
+    transition: animation 5s ease-in-out, box-shadow 5s ease-in-out; 
+}
+
+@keyframes blob {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 40% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
+.projectimage {
+    width: 100%;
+    height: auto;
+}
+
+.mats-container {
+    display: flex;
+    margin-top: 128px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 192px;
+    margin-right: 192px;
+    top: 50%;
+    transform: translate(0%, 10%);
+}
+
+.projects-container {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 192px;
+    margin-right: 192px;
+}
+
+.column-60 {
+    flex: 60%;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.column-40 {
+    flex: 40%;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.column-50 {
+    flex: 50%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+/* ------------------------------------------ About Page ----------------------------------------- */
+
+.about-container {
+    margin-top: 196px; 
+    margin-bottom: 128px; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px; 
+    width: 90%;
+}
+
+.about-row {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.about-column-left {
+    flex: 50%;
+    padding-right: 64px;
+}
+
+.about-column-right {
+    flex: 50%;
+    padding-left: 64px;
+}
+
+/* ----------------------------------------- Contact Page ----------------------------------------- */
+
+#LinkedIn {
+    font-family: "Inter";
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #f2f2f2;
+    text-decoration: none;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+}
+
+table {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+td {
+    vertical-align: middle;
+}
+
+a.svg {
+    position: relative;
+    display: inline-block;
+}
+
+a.svg:after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+}
+
+/* -------------------------------------------- Polygons -------------------------------------------- */
+
+.square {
+    height: 25%;
+    width: 25%;
+    position: absolute;
+    right: -18vh;
+    bottom: 12vh;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 36s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.circlewhite {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    right: 10vh;
+    bottom: 8vh;
+    z-index: 1;
+    opacity: 50%;
+}
+
+.circleblue {
+    height: 5%;
+    width: 5%;
+    position: absolute;
+    left: 30vh;
+    top: 124px;
+    opacity: 75%;
+    animation-name: circleblue;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes circleblue {
+    from {left: 30vh;}
+    to {left: 37vh;}
+}
+
+.circlered {
+    height: 5%;
+    width: 5%;
+    position: absolute;
+    left: 37vh;
+    top: 124px;
+    opacity: 75%;
+    animation-name: circlered;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes circlered {
+    from {left: 37vh;}
+    to {left: 30vh;}
+}
+
+.halfcircle {
+    height: 12%;
+    width: 12%;
+    position: absolute;
+    left: 90vh;
+    top: 7vh;
+    transform: rotate(125deg);
+    animation-name: halfcircle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes halfcircle {
+    from {top: 7vh; transform: rotate(125deg);}
+    to {top: 13vh; transform: rotate(140deg);}
+}
+
+/* --------------------------------------- Navigation Circles -------------------------------------- */
+
+.navcirclecontainer {
+    position: fixed;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navcircle {
+    width: 6px;
+    height: 6px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navcircle.inactive {
+    opacity: 25%;
+}
+
+/* ---------------------------------------- Scroll Animation ---------------------------------------- */
+
+.mouse {
+    width: 7%;
+    height: 7%;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mousecircle {
+    width: 0.7%;
+    height: 0.7%;
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation-name: mousecircle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mousecircle.stopped {
+    animation-play-state: paused;
+    display: none;
+}
+
+@keyframes mousecircle {
+    0% {bottom: 10vh; opacity: 100%;}
+    80% {bottom: 6.5vh; opacity: 0%;}
+    100% {bottom: 6.5vh; opacity: 0%;}
+}
+
+/* ----------------------------------------- Tags & Buttons ----------------------------------------- */
+
+.tags {
+    background-color: #6865FF;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 0.83vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 0px;
+    margin-right: 6px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.button {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 48px;
+    font-family: "Inter";
+    font-size: 1.67vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.button i {
+    margin-left:12px;
+    display: inline-block;
+    font-size: 1.5vw;
+    vertical-align: 1px;
+    animation-name: out;
+    animation-duration: 0.3s;
+}
+
+button:hover i {
+    margin-left: 12px;
+    display: inline-block;
+    font-size: 1.5vw;
+    vertical-align: 1px;
+    animation-name: in;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes in {
+    from {margin-left: 12px;}
+    to {margin-left: 16px; margin-right: -4px;}
+}
+
+@keyframes out {
+    from {margin-left: 16px; margin-right: -4px;}
+    to {margin-left: 12px;}
+}
+
+/* ----------------------------------------- Top Nav Menu ----------------------------------------- */
+
+.topmenu {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    margin-left: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 128px;
+    padding-right: 128px;
+    width: calc(100% - 256px);
+    background-color: #242424;
+}
+
+.topmenu a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 16px;
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#logo {
+    float: left;
+    text-decoration: none;
+}
+
+.topmenu a:hover {
+    text-decoration: underline #6865FF 3px;
+    text-underline-offset: 4px;
+}
+
+.topmenu a.active {
+    text-decoration: underline #6865FF 3px;
+    text-underline-offset: 4px;
+}
+
+/* ------------------------------------- Photos & Art Slider -------------------------------------- */
+  
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-5273.55px - 16px * 9));
+    }
+}
+
+.slider-images {
+    height: 575px;
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.slider {
+    background: #242424;
+    height: 575px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+  
+.slider .slide-track {
+    animation: scroll 60s linear infinite;
+    display: flex;
+    width: calc(5273.55px + 16px * 9);
+}
+  
+.slider .slide {
+    height: 575px;
+    width: 2000px;
+}
+
+/* -------------------------------------- Projects Hero Image -------------------------------------- */
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* -------------------------------------- Projects Image Grid -------------------------------------- */
+
+.image-container {
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.image2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* ------------------------------------ Return to Top Button ------------------------------------ */
+
+#return-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 64px;
+    background: #f2f2f2;
+    width: 64px;
+    height: 64px;
+    display: block;
+    text-decoration: none;
+    border-radius: 64px;
+    display: none;
+}
+
+#return-to-top i {
+    color: #242424;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover i {
+    top: 16px;
+}
+
+/* -------------------------------- Return to Previous Page Button -------------------------------- */
+
+#return {
+    position: fixed;
+    top: 128px;
+    left: 64px;
+    background: #f2f2f2;
+    border: none;
+    width: 64px;
+    height: 64px;
+    display: block;
+    text-decoration: none;
+    border-radius: 64px;
+    z-index: 1;
+}
+
+#return i {
+    color: #242424;
+    margin: 0;
+    position: relative;
+    top: 20px;
+    left: 24px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+#return:hover i {
+    left: 20px;
+}
